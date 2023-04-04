@@ -28,6 +28,10 @@ class LoginPage{
         cy.get('#txt-username').type(username);
     }
 
+    loginSuccessfulAssertion(){
+        cy.get('h2').should('have.text', 'Make Appointment');
+    }
+
 
 };
 

@@ -9,5 +9,6 @@ describe('Testing Login Functionality', () => {
 
   it('Login with valid creds', () => {
     loginPage.doLogin("John Doe", "ThisIsNotAPassword");
+    loginPage.loginSuccessfulAssertion();
   });
 })
