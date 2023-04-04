@@ -30,6 +30,9 @@ npx cypress run
 
 
 ### Generated Reports
+![image](https://user-images.githubusercontent.com/41513761/229819235-98addffa-b761-4d99-9494-776e745eb5bd.png)
+
+![image](https://user-images.githubusercontent.com/41513761/229819088-59312a15-a18e-4ae7-8b54-56ce9aef65b3.png)
 
 
 
