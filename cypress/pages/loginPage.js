@@ -1,15 +1,35 @@
 class LoginPage{
     doLogin(username, password){
         cy.visit('https://katalon-demo-cura.herokuapp.com/');
+        this.clickOnMenuToggleBtn();
+        this.clickOnLogin();
+        this.enterUserName(username);
+        this.enterPassword(password);
+        this.clickOnBtnLogin();
+    }
+
+
+    clickOnMenuToggleBtn(){
         cy.get('#menu-toggle').click();
+    }
+
+    clickOnLogin(){
         cy.get('.sidebar-nav > :nth-child(4) > a').click();
-        cy.get('#txt-username').type(username);
-        cy.get('#txt-password').type(password);
+    }
+
+    clickOnBtnLogin(){
         cy.get('#btn-login').click();
+    }
+    enterPassword(password){
+        cy.get('#txt-password').type(password);
+    }
+
+    enterUserName(username){
+        cy.get('#txt-username').type(username);
     }
 
 
 };
 
 
-export default LoginPage
+export default LoginPage;

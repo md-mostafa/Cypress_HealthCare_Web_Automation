@@ -11,7 +11,7 @@ module.exports = defineConfig({
 
       config.specPattern = [
         'cypress/e2e/loginTest.cy.js',
-        'cypress/e2e/addToCartTest.cy.js'
+        'cypress/e2e/appointmentTest.cy.js'
       ]
       return config;
     },
