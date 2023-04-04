@@ -1,6 +1,5 @@
 class LoginPage{
     doLogin(username, password){
-        cy.visit('https://katalon-demo-cura.herokuapp.com/');
         this.clickOnMenuToggleBtn();
         this.clickOnLogin();
         this.enterUserName(username);
@@ -31,7 +30,6 @@ class LoginPage{
     loginSuccessfulAssertion(){
         cy.get('h2').should('have.text', 'Make Appointment');
     }
-
 
 };
 

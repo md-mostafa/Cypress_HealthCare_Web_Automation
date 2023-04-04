@@ -46,6 +46,20 @@ class ApointmentPage {
         cy.get('#visit_date').should('have.text', date);
     }
 
+    bookAnAppointment(facility, readmission, program, date, comment){
+        this.selectFacility(facility);
+        
+        if(readmission.toLowerCase() == 'yes'){
+            this.checkOnHospitalReAdmission();
+        }
+
+        this.selectProgram(program);
+        this.enterDate(date);
+        this.enterComment(comment);
+
+        this.clickOnBookAppointment();
+    }
+
     
 }
 

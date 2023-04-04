@@ -5,6 +5,7 @@ describe('Testing Login Functionality', () => {
 
   beforeEach(() => {
     cy.viewport(1920, 1080);
+    cy.visit('https://katalon-demo-cura.herokuapp.com/');
   });
 
   it('Login with valid creds', () => {

@@ -7,6 +7,7 @@ describe("Appointment test", () => {
 
     beforeEach(() => {
         cy.viewport(1920, 1080);
+        cy.visit('https://katalon-demo-cura.herokuapp.com/');
         loginPage.doLogin("John Doe", "ThisIsNotAPassword");
     });
 
@@ -17,12 +18,7 @@ describe("Appointment test", () => {
         let readmission = 'Yes';
         let date = '12/04/2023';
         
-        appointmentPage.selectFacility(facility);
-        appointmentPage.checkOnHospitalReAdmission();
-        appointmentPage.selectProgram(program);
-        appointmentPage.enterDate(date);
-        appointmentPage.enterComment(comment);
-        appointmentPage.clickOnBookAppointment();
+        appointmentPage.bookAnAppointment(facility, readmission, program, date, comment);
         appointmentPage.verifyAppointment(facility, readmission, program, date, comment);
     });
 
