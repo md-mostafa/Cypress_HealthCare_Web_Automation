@@ -4,8 +4,6 @@
 ---
 This project involved creating Cypress e2e tests for a healthcare website to ensure users could login, make appointments, select healthcare programs, apply for readmission, and book appointments. A detailed report was generated using the Cypress-Mochawesome reporter.
 
-### Test Cases
-* [dmoney api test case](https://docs.google.com/spreadsheets/d/1aLoDU6Rhy-oIePIUNRm0kQjcJCGx52VuMHjpx5Jswws/edit?usp=sharing)
 
 ### Languages And Frameworks
 |                          |                  |
