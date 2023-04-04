@@ -31,6 +31,10 @@ class LoginPage{
         cy.get('h2').should('have.text', 'Make Appointment');
     }
 
+    loginUnsuccessfulAssertion(){
+        cy.get('.text-danger').should('contain', 'Login failed');
+    }
+
 };
 
 

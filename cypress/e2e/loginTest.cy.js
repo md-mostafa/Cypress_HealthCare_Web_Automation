@@ -8,6 +8,12 @@ describe('Testing Login Functionality', () => {
     cy.visit('https://katalon-demo-cura.herokuapp.com/');
   });
 
+
+  it('Login with invalid creds', () => {
+    loginPage.doLogin('InvalidName', 'Invalidpassword');
+    loginPage.loginUnsuccessfulAssertion();
+  });
+
   it('Login with valid creds', () => {
     loginPage.doLogin("John Doe", "ThisIsNotAPassword");
     loginPage.loginSuccessfulAssertion();

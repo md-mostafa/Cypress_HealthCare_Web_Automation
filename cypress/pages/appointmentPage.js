@@ -16,8 +16,12 @@ class ApointmentPage {
         }
     }
 
-    clickOnCalendarIcon(){
+    clickOnDatePicker(){
         cy.get('.input-group-addon').click();
+    }
+
+    datePickerIsVisible(){
+        cy.get('.datepicker').should('be.visible');
     }
 
     enterDate(date){
@@ -59,7 +63,6 @@ class ApointmentPage {
 
         this.clickOnBookAppointment();
     }
-
     
 }
 
